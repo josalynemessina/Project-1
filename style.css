@@ -1,0 +1,49 @@
+body {
+    background-color: #ffe9ef;
+}
+h1 {
+    color: #43162c;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+h2 {
+    color: #43162c;
+    font-family: 'Helvetica Neue', sans-serif;
+}   
+p {
+    color: #43162c;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+li {
+    color: #43162c;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.profile-layout {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.profile-text {
+    flex: 1;
+}
+.profile-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}   
+@media (max-width: 600px) {
+    .profile-layout {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .profile-image {
+        width: 100%;
+        height: auto;
+    }
+}    
